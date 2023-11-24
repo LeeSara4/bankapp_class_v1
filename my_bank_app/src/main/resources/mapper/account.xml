@@ -4,6 +4,7 @@
 
 <!-- 반드시 세미콜론 생략  -->
 <mapper namespace="com.dung.bankapp.repository.interfaces.AccountRepository">
+
 	<insert id="insert">
 		insert into account_tb(number, password, balance, user_id, created_at)
 		values(#{number}, #{password}, #{balance}, #{userId}, now())
